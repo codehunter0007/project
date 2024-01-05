@@ -19,14 +19,18 @@
 <script setup lang="ts">
 //引入图标组件
 import { Plus, Edit, Delete } from '@element-plus/icons-vue'
+
+for (let i = 0; i < 100; i++) {
+  console.log(i)
+}
 </script>
 
 <style scoped>
 .box {
-  width:600px;
-  height:400px;
+  width: 600px;
+  height: 400px;
   background: black;
-  h1{
+  h1 {
     color: white;
   }
 }
