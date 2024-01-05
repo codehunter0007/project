@@ -21,7 +21,9 @@
 import { Plus, Edit, Delete } from '@element-plus/icons-vue'
 
 for (let i = 0; i < 100; i++) {
+  
   console.log(i)
+
 }
 </script>
 
