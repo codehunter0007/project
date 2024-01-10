@@ -21,7 +21,7 @@ defineProps({
         type: String,
         default: '16px'
     },
-    heigth: {
+    height: {
         type: String,
         default: '16px'
     }
