@@ -13,7 +13,7 @@ app.use(ElementPlus, {
   locale: zhCn //element-plus国际化配置
 });
 import 'virtual:svg-icons-register';
-import gloalComponent from '@/components';
+import gloalComponent from 'src/components';
 app.use(gloalComponent)
 // 将应用挂载到挂载点上
 app.mount('#app');
