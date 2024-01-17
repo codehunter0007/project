@@ -137,6 +137,11 @@ declare const _default: {
             clearFilter: string;
             sumText: string;
         };
+        tour: {
+            next: string;
+            previous: string;
+            finish: string;
+        };
         tree: {
             emptyText: string;
         };

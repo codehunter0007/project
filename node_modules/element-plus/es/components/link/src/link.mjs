@@ -14,6 +14,10 @@ const linkProps = buildProps({
   },
   disabled: { type: Boolean, default: false },
   href: { type: String, default: "" },
+  target: {
+    type: String,
+    default: "_self"
+  },
   icon: {
     type: iconPropType
   }

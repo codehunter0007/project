@@ -14,8 +14,8 @@ declare const _default: import("vue").DefineComponent<{
     setActiveNames: (_activeNames: import("./collapse").CollapseActiveName[]) => void;
     rootKls: import("vue").ComputedRef<string>;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
-    "update:modelValue": (value: import("./collapse").CollapseModelValue) => "string" | "number" | "bigint" | "boolean" | "symbol" | "undefined" | "object" | "function";
-    change: (value: import("./collapse").CollapseModelValue) => "string" | "number" | "bigint" | "boolean" | "symbol" | "undefined" | "object" | "function";
+    "update:modelValue": (value: import("./collapse").CollapseModelValue) => boolean;
+    change: (value: import("./collapse").CollapseModelValue) => boolean;
 }, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     readonly accordion: BooleanConstructor;
     readonly modelValue: import("../../../utils").EpPropFinalized<(new (...args: any[]) => import("./collapse").CollapseModelValue & {}) | (() => import("./collapse").CollapseModelValue) | ((new (...args: any[]) => import("./collapse").CollapseModelValue & {}) | (() => import("./collapse").CollapseModelValue))[], unknown, unknown, () => [], boolean>;

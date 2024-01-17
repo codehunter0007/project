@@ -1,4 +1,4 @@
-import TimeSelect from './src/time-select.mjs';
+import TimeSelect from './src/time-select2.mjs';
 
 TimeSelect.install = (app) => {
   app.component(TimeSelect.name, TimeSelect);

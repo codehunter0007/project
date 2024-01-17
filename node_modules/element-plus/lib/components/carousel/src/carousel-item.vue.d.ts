@@ -39,6 +39,9 @@ declare const _default: import("vue").DefineComponent<{
     scale: import("vue").Ref<number>;
     ready: import("vue").Ref<boolean>;
     handleItemClick: () => void;
+    itemKls: import("vue").ComputedRef<(string | {
+        [x: string]: boolean;
+    })[]>;
     itemStyle: import("vue").ComputedRef<CSSProperties>;
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<{
     readonly name: import("../../../utils").EpPropFinalized<StringConstructor, unknown, unknown, "", boolean>;

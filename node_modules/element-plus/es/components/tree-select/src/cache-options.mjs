@@ -14,11 +14,11 @@ var CacheOptions = defineComponent({
     watch(() => props.data, () => {
       var _a;
       props.data.forEach((item) => {
-        if (!select.cachedOptions.has(item.value)) {
-          select.cachedOptions.set(item.value, item);
+        if (!select.states.cachedOptions.has(item.value)) {
+          select.states.cachedOptions.set(item.value, item);
         }
       });
-      const inputs = ((_a = select.selectWrapper) == null ? void 0 : _a.querySelectorAll("input")) || [];
+      const inputs = ((_a = select.selectRef) == null ? void 0 : _a.querySelectorAll("input")) || [];
       if (!Array.from(inputs).includes(document.activeElement)) {
         select.setSelected();
       }

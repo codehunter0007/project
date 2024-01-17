@@ -58,6 +58,7 @@ var ElTableColumn = defineComponent({
         filterable: props.filters || props.filterMethod,
         filteredValue: [],
         filterPlacement: "",
+        filterClassName: "",
         isColumnGroup: false,
         isSubColumn: false,
         filterOpened: false,
@@ -84,7 +85,8 @@ var ElTableColumn = defineComponent({
         "filterMultiple",
         "filterOpened",
         "filteredValue",
-        "filterPlacement"
+        "filterPlacement",
+        "filterClassName"
       ];
       let column = getPropsData(basicProps, sortProps, selectProps, filterProps);
       column = mergeOptions(defaults, column);

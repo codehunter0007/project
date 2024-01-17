@@ -58,15 +58,13 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
                 cssVarBlockName: (name: string) => string;
             };
             id: import("vue").Ref<string>;
-            containerKls: import("vue").ComputedRef<(string | {
-                selected: boolean;
-                hover: boolean;
-            })[]>;
+            containerKls: import("vue").ComputedRef<string[]>;
             currentLabel: import("vue").ComputedRef<any>;
             itemSelected: import("vue").ComputedRef<boolean>;
             isDisabled: import("vue").ComputedRef<any>;
             select: import("element-plus/es/components/select").SelectContext | undefined;
             hoverItem: () => void;
+            updateOption: (query: string) => void;
             visible: import("vue").Ref<boolean>;
             hover: import("vue").Ref<boolean>;
             selectOptionClick: () => void;
@@ -74,7 +72,6 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
                 index: number;
                 groupDisabled: boolean;
                 visible: boolean;
-                hitState: boolean;
                 hover: boolean;
             };
         }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, {
@@ -128,15 +125,13 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
             cssVarBlockName: (name: string) => string;
         };
         id: import("vue").Ref<string>;
-        containerKls: import("vue").ComputedRef<(string | {
-            selected: boolean;
-            hover: boolean;
-        })[]>;
+        containerKls: import("vue").ComputedRef<string[]>;
         currentLabel: import("vue").ComputedRef<any>;
         itemSelected: import("vue").ComputedRef<boolean>;
         isDisabled: import("vue").ComputedRef<any>;
         select: import("element-plus/es/components/select").SelectContext | undefined;
         hoverItem: () => void;
+        updateOption: (query: string) => void;
         visible: import("vue").Ref<boolean>;
         hover: import("vue").Ref<boolean>;
         selectOptionClick: () => void;
@@ -144,7 +139,6 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
             index: number;
             groupDisabled: boolean;
             visible: boolean;
-            hitState: boolean;
             hover: boolean;
         };
     }> & {} & import("vue").ComponentCustomProperties;
@@ -179,15 +173,13 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
         cssVarBlockName: (name: string) => string;
     };
     id: import("vue").Ref<string>;
-    containerKls: import("vue").ComputedRef<(string | {
-        selected: boolean;
-        hover: boolean;
-    })[]>;
+    containerKls: import("vue").ComputedRef<string[]>;
     currentLabel: import("vue").ComputedRef<any>;
     itemSelected: import("vue").ComputedRef<boolean>;
     isDisabled: import("vue").ComputedRef<any>;
     select: import("element-plus/es/components/select").SelectContext | undefined;
     hoverItem: () => void;
+    updateOption: (query: string) => void;
     visible: import("vue").Ref<boolean>;
     hover: import("vue").Ref<boolean>;
     selectOptionClick: () => void;
@@ -195,7 +187,6 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
         index: number;
         groupDisabled: boolean;
         visible: boolean;
-        hitState: boolean;
         hover: boolean;
     };
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, {
@@ -260,15 +251,13 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
                 cssVarBlockName: (name: string) => string;
             };
             id: import("vue").Ref<string>;
-            containerKls: import("vue").ComputedRef<(string | {
-                selected: boolean;
-                hover: boolean;
-            })[]>;
+            containerKls: import("vue").ComputedRef<string[]>;
             currentLabel: import("vue").ComputedRef<any>;
             itemSelected: import("vue").ComputedRef<boolean>;
             isDisabled: import("vue").ComputedRef<any>;
             select: import("element-plus/es/components/select").SelectContext | undefined;
             hoverItem: () => void;
+            updateOption: (query: string) => void;
             visible: import("vue").Ref<boolean>;
             hover: import("vue").Ref<boolean>;
             selectOptionClick: () => void;
@@ -276,7 +265,6 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
                 index: number;
                 groupDisabled: boolean;
                 visible: boolean;
-                hitState: boolean;
                 hover: boolean;
             };
         }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, {
@@ -330,15 +318,13 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
             cssVarBlockName: (name: string) => string;
         };
         id: import("vue").Ref<string>;
-        containerKls: import("vue").ComputedRef<(string | {
-            selected: boolean;
-            hover: boolean;
-        })[]>;
+        containerKls: import("vue").ComputedRef<string[]>;
         currentLabel: import("vue").ComputedRef<any>;
         itemSelected: import("vue").ComputedRef<boolean>;
         isDisabled: import("vue").ComputedRef<any>;
         select: import("element-plus/es/components/select").SelectContext | undefined;
         hoverItem: () => void;
+        updateOption: (query: string) => void;
         visible: import("vue").Ref<boolean>;
         hover: import("vue").Ref<boolean>;
         selectOptionClick: () => void;
@@ -346,7 +332,6 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
             index: number;
             groupDisabled: boolean;
             visible: boolean;
-            hitState: boolean;
             hover: boolean;
         };
     }> & {} & import("vue").ComponentCustomProperties;
@@ -381,15 +366,13 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
         cssVarBlockName: (name: string) => string;
     };
     id: import("vue").Ref<string>;
-    containerKls: import("vue").ComputedRef<(string | {
-        selected: boolean;
-        hover: boolean;
-    })[]>;
+    containerKls: import("vue").ComputedRef<string[]>;
     currentLabel: import("vue").ComputedRef<any>;
     itemSelected: import("vue").ComputedRef<boolean>;
     isDisabled: import("vue").ComputedRef<any>;
     select: import("element-plus/es/components/select").SelectContext | undefined;
     hoverItem: () => void;
+    updateOption: (query: string) => void;
     visible: import("vue").Ref<boolean>;
     hover: import("vue").Ref<boolean>;
     selectOptionClick: () => void;
@@ -397,7 +380,6 @@ declare const component: import("vue").DefineComponent<{}, any, {}, {}, {
         index: number;
         groupDisabled: boolean;
         visible: boolean;
-        hitState: boolean;
         hover: boolean;
     };
 }, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, {

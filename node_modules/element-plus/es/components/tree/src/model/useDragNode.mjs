@@ -54,6 +54,8 @@ function useDragNodeHandler({ props, ctx, el$, dropIndicator$, store }) {
     }
     if (dropPrev || dropInner || dropNext) {
       dragState.value.dropNode = dropNode;
+    } else {
+      dragState.value.dropNode = null;
     }
     if (dropNode.node.nextSibling === draggingNode.node) {
       dropNext = false;

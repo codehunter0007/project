@@ -868,3 +868,4 @@ export declare const ElTree: SFCWithInstall<import("vue").DefineComponent<{
     autoExpandParent: boolean;
     highlightCurrent: boolean;
 }>>;
+export type { TreeInstance } from './src/instance';

@@ -62,6 +62,7 @@ var ElTableColumn = vue.defineComponent({
         filterable: props.filters || props.filterMethod,
         filteredValue: [],
         filterPlacement: "",
+        filterClassName: "",
         isColumnGroup: false,
         isSubColumn: false,
         filterOpened: false,
@@ -88,7 +89,8 @@ var ElTableColumn = vue.defineComponent({
         "filterMultiple",
         "filterOpened",
         "filteredValue",
-        "filterPlacement"
+        "filterPlacement",
+        "filterClassName"
       ];
       let column = getPropsData(basicProps, sortProps, selectProps, filterProps);
       column = util.mergeOptions(defaults, column);
